@@ -1,9 +1,9 @@
 import React from 'react';
 
 const Cell = () => {
-    return (
-        <span classNAme="cell"></span>
-    )
-}
+
+    return <div className="cell"></div>;
+    
+};    
 
 export default Cell;
