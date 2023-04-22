@@ -1,10 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import './main.scss';
 import './styles.scss';
+import BoardView from './components/Board';
 
 const App = () => {
-    return <h1>2048</h1>;
+    return <BoardView/> ;
 }
 
-ReactDOM.render(<App />, document.getElementById("root"));
+const root = createRoot(document.getElementById("root")); 
+
+// ReactDOM.render(<App />, document.getElementById("root"));
+root.render(<App />);
